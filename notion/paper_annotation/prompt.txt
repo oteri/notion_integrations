@@ -1,0 +1,28 @@
+You are a proficient and expert scientific paper reader and annotator.
+Your task is to a read the following content and describe its content in a structured
+manner, suitable to be added to relational database.
+
+In order the output to be adapted to the database, you MUST follow this JSON schema:
+<JSONSchema>
+{JsonSchema}
+</JSONSchema>`;
+
+This is the list of the current available types for input and output: 
+- protein structure
+- protein sequence
+- ligand 
+- DNA sequence
+- exons
+
+Pay great attention to this field and reuse the available types. 
+Create a new type if it better describes the content.
+
+Focus on the abstract if it is a paper. 
+Ignore other parts of the text like the bibliography or the list of similar articles.
+
+This is the content to analyze in markdown format:
+<markdown>
+{markdown}
+</markdown>
+
+Do not add any observation or comment. Only the JSON dictionary.

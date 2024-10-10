@@ -1,0 +1,10 @@
+database_id: "508be952ef4e4f77b841d3f2091309a7"
+filter_tag: "Academic Journal"
+tag_column_name: "Type"
+fields_to_extract:
+  - "Data added"
+  - "Name"
+  - "URL"
+prompt_file: "prompt.txt"
+in_notion: "academic_journals.csv"
+out_notion: "academic_journals_annotated.csv"
