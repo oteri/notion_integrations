@@ -29,18 +29,9 @@ async def callback(code: Optional[str] = Query(None)):
         return {"message": "No code provided"}
 
 
-
-
-
-
-
-
-
-    
-
 if __name__ == "__main__":
-    get_access_token(client_id='78u1uscjv50fks',
-                     client_secret='WPL_AP1.0R8zKTKaY8McRayy.UKALIw==', 
+    get_access_token(client_id=os.getenv("LINKEDIN_CLIENT_ID"),
+                     client_secret=os.getenv("LINKEDIN_API"),
                      redirect_uri='http://localhost:8000/callback' 
                      )
     uvicorn.run(
